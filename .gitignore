@@ -24,3 +24,6 @@ termichat-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# sql_database
+/db/
