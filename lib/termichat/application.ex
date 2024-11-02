@@ -8,7 +8,8 @@ defmodule Termichat.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      {Plug.Cowboy, scheme: :http, plug: Termichat.Router, options: [port: 4000]}
+      {Plug.Cowboy, scheme: :http, plug: Termichat.Router, options: [port: 4000]},
+      Termichat.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
